@@ -1,0 +1,91 @@
+/* Reset some default styling */
+body, h1, h2, h3, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+main {
+    padding: 1rem;
+}
+
+.featured {
+    margin-top: 1rem;
+}
+
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.movie-item {
+    flex: 1 1 calc(50% - 1rem); /* Two items per row with space between */
+    background: #f4f4f4;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+}
+
+.movie-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.movie-item h3 {
+    margin: 0.5rem 0;
+}
+
+.movie-item p {
+    padding: 0 1rem;
+}
+
+.movie-item a {
+    display: inline-block;
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    background: #333;
+    text-decoration: none;
+    border-radius: 0.25rem;
+}
+
+.movie-item a:hover {
+    background: #555;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .movie-item {
+        flex: 1 1 100%; /* One item per row on small screens */
+    }
+}
